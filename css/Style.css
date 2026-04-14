@@ -1,0 +1,73 @@
+/* Variables globales */
+
+:root {
+    /* Définition des couleurs */
+    --color-bleuAcademique: #0A316C;
+    --color-blancPur : #FFFFFF;
+    --color-cyanTechnologique : #81ECEC;
+    --color-jauneElectrique : #FDCB6E;
+
+    /* Typographie titres */
+
+    --typo-titres : "Poppins", sans-serif;
+
+    --h1-taille : 40px;
+    --h1-gras : 700;
+    --h1-interligne : 1.2;
+
+    --h2-taille : 32px;
+    --h2-gras: 500;
+    --h2-interligne : 1.3;
+
+    /* Typographie texte */
+
+    --typo-texte : "Roboto", sans-serif;
+
+    --p-taille : 16px;
+    --p-gras : 400;
+    --p-interligne : 1.5;
+
+    --liste-taille : 14px;
+    --liste-gras : 300;
+    --liste-espacement : 1.5;
+    --liste-typo : uppercase;
+}
+
+    /* Header */
+
+nav {
+    background-color: var(--color-blancPur);
+    padding : 5%;
+    position : fixed;
+}
+
+nav a{
+    justify-content : flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom : 100px;
+}
+
+nav a {
+    font-family: var(--typo-texte);
+    font-size : var(--p-taille);
+    font-weight : var(--p-gras);
+    line-height : var(--p-interligne);
+}
+
+h2 {
+    color : var(--color-bleuAcademique);
+    font-family: var(--typo-titres);
+    font-size : var(--h2-taille);
+    font-weight : var(--h2-gras);
+    line-height : var(--h2-interligne);
+}
+
+h1 {
+    color : var(--color-bleuAcademique);
+    font-family: var(--typo-titres);
+    font-size : var(--h1-taille);
+    font-weight : var(--h1-gras);
+    line-height : var(--h1-interligne);
+}
