@@ -1,11 +1,17 @@
 /* Variables globales */
 
+* {
+    margin : 0px;
+    padding : 0px;
+}
+
 :root {
     /* Définition des couleurs */
     --color-bleuAcademique: #0A316C;
     --color-blancPur : #FFFFFF;
     --color-cyanTechnologique : #81ECEC;
     --color-jauneElectrique : #FDCB6E;
+    --color-ombre : rgba(255,255,255,0.12);
 
     /* Typographie titres */
 
@@ -33,24 +39,10 @@
     --liste-typo : uppercase;
 }
 
-    /* Header */
-
-nav {
-    background-color: var(--color-blancPur);
-    padding : 5%;
-    position : fixed;
-}
-
-nav a{
-    justify-content : flex-end;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
-    bottom : 100px;
-}
+    /* Ajout des variables pour les titres, textes etc... */
 
 nav a {
-    font-family: var(--typo-texte);
+    font-family: var(--typo-titres);
     font-size : var(--p-taille);
     font-weight : var(--p-gras);
     line-height : var(--p-interligne);
@@ -71,3 +63,144 @@ h1 {
     font-weight : var(--h1-gras);
     line-height : var(--h1-interligne);
 }
+
+.liens > a, .menu-deroulant > a {
+    transition : all 0.5s ease;
+}
+
+    /* Menu et header */
+
+header {
+    top : 0;
+    position : sticky;
+}
+
+#menu-burger {
+    display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background: var(--color-bleuAcademique);
+}
+
+.liens {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.liens > a, .menu-deroulant > a {
+  color: var(--color-blancPur);
+  font-size: var(--p-taille);
+  margin-right : 10px;
+  margin-left : 10px;
+  padding : 3px;
+  text-decoration : none;
+  border-radius: 4px;
+}
+.liens > a:hover, .menu-deroulant > a:hover {
+    background: var(--color-ombre);
+    transform: scale(1.1);
+}
+
+    /* Sous menu */
+
+.menu-deroulant {
+    position: relative;
+}
+
+.sous-menu {
+  display: block;
+  position: absolute;
+  top: 23px;
+  background: var(--color-blancPur);
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  width: 170px;
+  padding: 4px 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.menu-deroulant:hover .sous-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.sous-menu a {
+  display: block;
+  color : var(--color-bleuAcademique);
+  text-decoration: none;
+  padding: 8px 14px;
+  font-size: var(--p-taille);
+}
+.sous-menu a:hover {
+    background: #bcbcbc56;
+}
+
+    /* Menu responsive */
+
+@media (max-width: 768px) {
+
+    #menu-burger {
+    display: block;
+    position: absolute;
+    left : 90%;
+    top : 18px;
+}
+
+  nav {
+    z-index: var(--z-nav);
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 8px;
+  }
+
+  .liens {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display : none;
+  }
+
+  .liens > a, .menu-deroulant > a {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+
+  .menu-deroulant {
+    width: 100%;
+  }
+
+  .sous-menu {
+    position: static;
+    display: block;
+    border: none;
+    border-radius: 0;
+    background: rgba(0,0,0,0.15);
+    min-width: 100%;
+    padding: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: none;
+  }
+
+  .sous-menu a {
+    color: var(--color-blancPur);
+    padding: 8px 16px;
+  }
+}
+
+    /* footer */

@@ -11,20 +11,23 @@
 <body>
     <header>
         <nav>
-            <img class="logo" src="../data/Logo_Efrei.svg" alt = "Efrei_logo" width="15%">
-            <a href="./Accueil.html">Accueil</a>
-            <a href="./Accueil.html">Contact & Admissions</a>
-            <a href="./Admissions.html">Admissions</a>
-            <a href="./Contact.html">Contact</a>
-            <a href="./Cours.html">Cours</a>
-            <a href="./Projets.html">Projets</a>
-            <a href="./APropos.html">A propos</a>
-            <a href="./Vie_Etudiante.html">Vie étudiante</a>
+            <img class="logo" href="https://www.efrei.fr" src="../data/Logo-Efrei.png" alt="Efrei_logo" width="15%">
+            <img id="menu-burger" class="logo" src="../data/burger-menu.svg" width="4%" onclick="afficherMenu()">
+            <div class="liens" id="liens">
+                <a href="./Accueil.html">Accueil</a>
+                <a href="./Cours.html">Cours</a>
+                <a href="./Projets.html">Projets</a>
+                <a href="./Vie_Etudiante.html">Vie étudiante</a>
+                <div class="menu-deroulant">
+                    <a href="#">Contact & Admissions</a>
+                    <div class="sous-menu">
+                        <a href="./Contact.html">Contact</a>
+                        <a href="./Admissions.html">Admissions</a>
+                    </div>
+                </div>
+                <a href="./APropos.html">À propos</a>
+            </div>
         </nav>
-
-        <a href = "https://www.efrei.fr">
-            <img src = "../data/Header_etudiants.jpg" alt = "Efrei_img" height = "100%" width = "100%">
-        </a>
     </header>
 
     <footer>
