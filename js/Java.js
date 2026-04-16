@@ -13,6 +13,9 @@ function afficherMenu () {
 
 window.addEventListener("resize", function () {
     if (window.innerWidth > 768) {
-        document.getElementById("liens").style.display = "flex";
+        document.getElementById("liens").style.display = "flex";}
+    else {
+        document.getElementById("liens").style.display = "none";
+        }
     }
-});
+);

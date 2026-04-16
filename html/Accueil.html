@@ -3,6 +3,7 @@
     <head>
         <title>Projet WEB - Accueil</title>
         <link rel= "stylesheet" href="../css/Style.css">
+        <link rel= "stylesheet" href="../css/accueil.css">
         <script type="text/javascript" src="../js/Java.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
@@ -30,14 +31,39 @@
         </nav>
     </header>
 
-    <a href = "https://www.efrei.fr">
-        <img src = "../data/Header_etudiants.jpg" alt = "Efrei_img" height = "100%" width = "100%">
-    </a>
+    <section id="ombre">
+        <div id="survol-section"></div>
+        <a href = "https://www.efrei.fr">
+            <img id="photo-accueil" src = "../data/Header_etudiants.jpg" alt = "Efrei_img" height = "100%" width = "100%">
+        </a>
+        <div id="texte-photo-accueil">
+            <h1>Construis ton avenir dans la tech dès aujourd'hui.</h1>
+            <div id="boutton-photo-accueil">
+                <button class="boutton-photo-accueil">Voir plus</button>
+                <button class="boutton-photo-accueil">Nous contacter</button>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <br>
-        <p>©️2026 SIEUX Julie - MORINEAUX Arthur.</p>
-        <p>Tous droits réservés.</p>
+        <div id="credits">
+            <p>©️2026 SIEUX Julie - MORINEAUX Arthur.</p>
+            <p>Tous droits réservés.</p>
+        </div>
+        <section id="liens-footer">
+            <div class="liens-footer">
+                <a href="./Accueil.html">Accueil</a>
+                <a href="./Cours.html">Cours</a>
+                <a href="./Projets.html">Projets</a>
+                <a href="./Vie_Etudiante.html">Vie étudiante</a>
+            </div>
+            <div class="liens-footer">
+                <a href="./Contact.html">Contact</a>
+                <a href="./Admissions.html">Admissions</a>
+                <a href="./APropos.html">À propos</a>
+            </div>
+        </section>
     </footer>
 </body>
 

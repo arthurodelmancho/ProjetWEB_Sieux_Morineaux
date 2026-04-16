@@ -1,4 +1,4 @@
-/* Variables globales */
+      /* ---- Variables globales ---- */
 
 * {
     margin : 0px;
@@ -6,14 +6,15 @@
 }
 
 :root {
-    /* Définition des couleurs */
+    /* ---- Définition des couleurs ---- */
+
     --color-bleuAcademique: #0A316C;
     --color-blancPur : #FFFFFF;
     --color-cyanTechnologique : #81ECEC;
     --color-jauneElectrique : #FDCB6E;
     --color-ombre : rgba(255,255,255,0.12);
 
-    /* Typographie titres */
+    /* ---- Typographie titres ---- */
 
     --typo-titres : "Poppins", sans-serif;
 
@@ -25,7 +26,7 @@
     --h2-gras: 500;
     --h2-interligne : 1.3;
 
-    /* Typographie texte */
+    /* ---- Typographie texte ---- */
 
     --typo-texte : "Roboto", sans-serif;
 
@@ -39,13 +40,14 @@
     --liste-typo : uppercase;
 }
 
-    /* Ajout des variables pour les titres, textes etc... */
+    /* ---- Ajout des variables pour les titres, textes bouttons... ---- */
 
-nav a {
+nav a, a {
     font-family: var(--typo-titres);
     font-size : var(--p-taille);
     font-weight : var(--p-gras);
     line-height : var(--p-interligne);
+    text-decoration: none;
 }
 
 h2 {
@@ -64,15 +66,51 @@ h1 {
     line-height : var(--h1-interligne);
 }
 
-.liens > a, .menu-deroulant > a {
+p {
+  font-family: var(--typo-texte);
+  font-size : var(--p-taille);
+  line-height: var(--p-interligne);
+}
+
+button {
+  background-color: var(--color-jauneElectrique);
+  color : var(--color-bleuAcademique);
+  border : none;
+  border-radius : 8px;
+  width : 120px;
+  height : 35px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  font-size : var(--p-taille);
+}
+
+button:hover {
+  background-color: var(--color-cyanTechnologique);
+}
+
+.liens > a, .menu-deroulant > a, button {
     transition : all 0.5s ease;
 }
 
-    /* Menu et header */
+      /* ---- Responsive ---- */
+
+@media (max-width: 480px) {
+  :root {
+    --p-taille : 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --p-taille : 14px;
+  }
+}
+
+      /* ---- Menu et header ---- */
 
 header {
     top : 0;
     position : sticky;
+    z-index : 1000;
 }
 
 #menu-burger {
@@ -85,7 +123,10 @@ nav {
   justify-content: space-between;
   height: 80px;
   background: var(--color-bleuAcademique);
+  position : relative;
 }
+
+      /* ---- titres des pages ---- */
 
 .liens {
   display: flex;
@@ -107,7 +148,7 @@ nav {
     transform: scale(1.1);
 }
 
-    /* Sous menu */
+      /* ---- Sous menu ---- */
 
 .menu-deroulant {
     position: relative;
@@ -137,16 +178,13 @@ nav {
 
 .sous-menu a {
   display: block;
-  color : var(--color-bleuAcademique);
-  text-decoration: none;
   padding: 8px 14px;
-  font-size: var(--p-taille);
 }
 .sous-menu a:hover {
     background: #bcbcbc56;
 }
 
-    /* Menu responsive */
+      /* ---- Menu responsive ---- */
 
 @media (max-width: 768px) {
 
@@ -158,7 +196,7 @@ nav {
 }
 
   nav {
-    z-index: var(--z-nav);
+    z-index: 1000;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
@@ -203,4 +241,44 @@ nav {
   }
 }
 
-    /* footer */
+      /* ---- footer ---- */
+
+footer {
+    background: var(--color-bleuAcademique);
+    padding: 30px 40px;
+}
+
+footer a {
+  text-decoration: underline;
+  color: var(--color-blancPur);
+}
+
+footer a:hover {
+  color: var(--color-jauneElectrique);
+}
+
+#credits {
+  text-align: center;
+  max-width : 40%;
+  padding-right : 20px;
+  padding-bottom: 100px;;
+  border-right : 1px solid var(--color-cyanTechnologique);
+  color : var(--color-blancPur);
+}
+
+.liens-footer {
+  color :white;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-left: 20px;
+}
+
+#liens-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position : absolute;
+    left : 50%;
+    bottom : -220px;
+}

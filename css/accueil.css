@@ -1,0 +1,118 @@
+
+    /* ---- Sections ---- */
+
+section {
+    position: relative;
+    z-index: 1;
+}
+
+
+    /* ---- titre et bouttons sur la photo ---- */
+
+#texte-photo-accueil {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+    z-index : 3;
+}
+
+#texte-photo-accueil h1 {
+  color : var(--color-blancPur);
+}
+
+    /* ---- Ombre en haut de l'image ---- */
+
+#ombre::before {
+    content: "";
+    top : 0;
+    left : 0;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), transparent);
+    z-index: 2;
+}
+
+#accueil-section1:hover {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#survol-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+section:hover #survol-section {
+    height: 100%;
+}
+
+      /* ---- Bouttons sur l'image ---- */
+
+#boutton-photo-accueil {
+  position : relative;
+  top : 250px;
+}
+
+.boutton-photo-accueil {
+  margin: 30px;
+  margin-top: 0px;
+}
+
+      /* ---- Poto page d'accueil responsive */
+
+@media (max-width: 1024px) {
+  #texte-photo-accueil h1 {
+    font-size: 30px;
+  }
+
+  #boutton-photo-accueil {
+    position : relative;
+    top : 175px;
+  }
+}
+
+@media (max-width: 768px) {
+  #texte-photo-accueil h1 {
+    font-size: 25px;
+  }
+
+  #boutton-photo-accueil {
+    position : relative;
+    top : 100px;
+  }
+
+  button {
+    width : 100px;
+    height : 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #texte-photo-accueil h1 {
+    font-size: 15px;
+  }
+
+  #boutton-photo-accueil {
+    position : relative;
+    top : 45px;
+  }
+
+  button {
+    width : 75px;
+    height : 18px;
+    font-size: 10px;
+  }
+
+    .boutton-photo-accueil {
+        margin: 20px;
+    }
+}
