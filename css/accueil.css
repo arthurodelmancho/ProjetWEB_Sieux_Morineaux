@@ -66,7 +66,7 @@ section:hover #survol-section {
   margin-top: 0px;
 }
 
-      /* ---- Poto page d'accueil responsive */
+      /* ---- Photo page d'accueil responsive ---- */
 
 @media (max-width: 1024px) {
   #texte-photo-accueil h1 {
@@ -115,4 +115,114 @@ section:hover #survol-section {
     .boutton-photo-accueil {
         margin: 20px;
     }
+}
+
+      /* ---- Descriptions ---- */
+
+.infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width : 100%;
+}
+
+.imgAccueil {
+  width: 96%;
+  padding : 10px;
+  clip-path: xywh(0 0px 100% 90% round 30% 0);
+}
+
+.texteDesc {
+  width : 94%;
+  text-align: justify;
+  padding : 15px;
+  margin-top : 30px;
+}
+
+      /* ---- Descriptions responsive ---- */
+
+@media (max-width: 768px) {
+  .infos {
+    grid-template-columns: 1fr;
+    width : 95%;
+  }
+
+  .imgAccueil {
+    width: 100%;
+  }
+
+  .texteDesc {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .infos {
+    width : 90%;
+  }
+}
+
+      /* ---- Chiffres clé ---- */
+
+#chiffresCle {
+  position : relative;
+  width : 98%;
+  left : 2%;
+}
+
+.chiffres-cle {
+  margin : 5%;
+  column-count: 3;
+}
+
+.chiffre {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  width : 65%;
+  background: var(--color-cyanTechnologique);
+  padding: 35px 20px;
+  border-radius: 12px;
+  text-align : center;
+}
+
+      /* ---- Carrousel d'événements ---- */
+
+#carrousel {
+  overflow: hidden;
+  position : relative;
+  width : 98%;
+  left : 2%;
+}
+
+.evenement { 
+  display: none; 
+  padding: 2rem; 
+  border: 1px solid #7a7a7a; 
+  border-radius: 12px; 
+}
+
+.evenement.active { 
+  display: block; 
+}
+
+#dots { 
+  display: flex; 
+  gap: 8px; 
+}
+
+.dot { 
+  width: 8px; 
+  height: 8px; 
+  border-radius: 50%; 
+  background: #ccc; 
+  transition: background .3s; 
+}
+
+.dot.active { 
+  background: #333; 
+}
+
+#controls { 
+  display: flex;
+  gap: 8px; 
 }

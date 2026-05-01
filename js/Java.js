@@ -19,3 +19,29 @@ window.addEventListener("resize", function () {
         }
     }
 );
+
+// Fonctions pour les boutons
+
+function contact() {
+    window.location.replace("./Contact.html");
+}
+
+// fonctions pour le carorusel
+
+let current = 0;
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll('.evenement');
+    const dots = document.querySelectorAll('.dot');
+
+    slides[0].classList.add('active');
+    dots[0].classList.add('active');
+
+    window.goTo = function(idx) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (idx + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+    }
+});
