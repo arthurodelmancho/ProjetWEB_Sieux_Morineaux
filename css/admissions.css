@@ -1,0 +1,27 @@
+thead tr {
+      background: #0b1f4b;
+      color: #fff;
+    }
+ 
+    thead th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+ 
+    tbody tr:nth-child(even) {
+      background: #f4f6fb;
+    }
+ 
+    tbody td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e0e4ef;
+      color: #222;
+    }
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.93rem;
+      margin-top: 8px;
+    }

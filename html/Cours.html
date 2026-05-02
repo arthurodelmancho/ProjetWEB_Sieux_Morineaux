@@ -3,6 +3,7 @@
     <head>
         <title>Projet WEB - Cours</title>
         <link rel= "stylesheet" href="../css/Style.css">
+        <link rel= "stylesheet" href="../css/cours.css">
         <script type="text/javascript" src="../js/Java.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
@@ -30,52 +31,131 @@
         </nav>
     </header>
 
-    <section id="infoDepart">
-        <img class="imgAccueil">
-        <div>
-            <h1>Le Département informatique</h1>
-            <p>Le département informatique de l'EFREI regroupe les formations liées au développement logiciel, 
-                à la data, à l'intelligence artificielle et à la cybersécurité. 
-                Les étudiants y apprennent les bases solides de la programmation, 
-                des algorithmes et des systèmes, avant de se spécialiser dans des domaines avancés comme le cloud, 
-                le machine learning ou la sécurité informatique. 
-                L'enseignement est fortement orienté vers la pratique, avec des projets concrets, 
-                du travail en équipe et l'utilisation d'outils professionnels, 
-                afin de préparer les étudiants aux besoins actuels du marché du travail.
-            </p>
+    <br>
+
+    <section class="carte" id="pge">
+        <div class="en-tete" onclick="basculer('pge')">
+            <h1>Programme grande école (PGE)</h1>
+        </div>
+        <br>
+        <p>Formation d'ingénieur en 5 ans (2 ans de prépa intégrée + 3 ans de cycle ingénieur). 
+            À l'issue d'une première année de tronc commun avec un semestre à l'international, 
+            les étudiants choisissent une majeure parmi 14, réparties en 4 filières. 
+            Le diplôme confère le titre d'ingénieur et le grade de master.
+        </p>
+        
+        <div class="a-afficher">
+            <br><br>
+            <hr class="ligne">
+            <br><br>
+
+            <div>
+                <h2>Data Science</h2>
+                <ul>
+                    <li>Data Engineering</li>
+                    <li>Data & Artificial Intelligence</li>
+                    <li>Bio-informatique</li>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <h2>Information Technology</h2>
+                <ul>
+                    <li>Software Engineering</li>
+                    <li>IT for Finance</li>
+                    <li>Cloud & DevOps Engineering</li>
+                    <li>Robotique & Objets connectés</li>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <h2>Sécurité & Réseaux</h2>
+                <ul>
+                    <li>Cybersécurité & Infrastructures logicielles</li>
+                    <li>Cybersécurité & Gouvernance SI</li>
+                    <li>Architectures des réseaux</li>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <h2>Systèmes embarqués</h2>
+                <ul>
+                    <li>Systèmes embarqués & Objets connectés</li>
+                    <li>Systèmes embarqués critiques</li>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <h2>Filières en apprentissage</h2>
+                <ul>
+                    <li>Cybersécurité</li>
+                    <li>Data & IA</li>
+                    <li>Software Engineering</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section id="infoDepart">
-        <img class="imgAccueil">
+    <br><br>
+
+    <section class="carte" id="pex">
+    <div class="en-tete" onclick="basculer('pex')">
+        <h1>Programmes experts du numérique (PEx)</h1>
+    </div>
+    <br>
+    <p>Cursus courts de Bac à Bac+5 (BTS, Bachelors, Licences, Mastères, Masters et MSc) orientés expertise numérique. 
+        L'alternance est possible dès la 1re année de BTS ou en 3e année de bachelor. 
+        Tous les programmes permettent l'obtention d'un double diplôme reconnu par l'État.
+    </p>
+    
+    <div class="a-afficher">
+        <br><br>
+        <hr class="ligne">
+        <br><br>
+
         <div>
-            <h1>Le Département informatique</h1>
-            <p>Le département informatique de l'EFREI regroupe les formations liées au développement logiciel, 
-                à la data, à l'intelligence artificielle et à la cybersécurité. 
-                Les étudiants y apprennent les bases solides de la programmation, 
-                des algorithmes et des systèmes, avant de se spécialiser dans des domaines avancés comme le cloud, 
-                le machine learning ou la sécurité informatique. 
-                L'enseignement est fortement orienté vers la pratique, avec des projets concrets, 
-                du travail en équipe et l'utilisation d'outils professionnels, 
-                afin de préparer les étudiants aux besoins actuels du marché du travail.
-            </p>
+            <h2>Technologie & Numérique — Mastères</h2>
+            <ul>
+                <li>Mastère Dev. manager full stack</li>
+                <li>Mastère Data engineering & IA</li>
+                <li>Mastère Cybersécurité</li>
+                <li>Mastère Cybersécurité & Management</li>
+                <li>Mastère Green IT</li>
+            </ul>
         </div>
+        <br>
+        <div>
+            <h2>Digital & Management — Masters & Mastères</h2>
+            <ul>
+                <li>Mastère UX Design</li>
+                <li>Mastère Communication & stratégies digitales</li>
+                <li>Mastère Marketing digital & management</li>
+                <li>Mastère Management, data & IA</li>
+                <li>Master Marketing & technologies digitales</li>
+                <li>Master International communication management</li>
+                <li>Master Management & digital transformation</li>
+                <li>Master Digital supply chain management</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h2>Mastères Spécialisés</h2>
+            <ul>
+                <li>MS Data and Generative AI Engineering</li>
+                <li>Data & AI for Business</li>
+                <li>Expert en cybersécurité</li>
+                <li>Manager Cybersécurité & Gouvernance</li>
+                <li>Numérique Responsable</li>
+                <li>Computational and Quantitative Finance</li>
+            </ul>
+        </div>
+    </div>
     </section>
 
-    <section id="infoDepart">
-        <img class="imgAccueil">
-        <div>
-            <h1>Le Département informatique</h1>
-            <p>Le département informatique de l'EFREI regroupe les formations liées au développement logiciel, 
-                à la data, à l'intelligence artificielle et à la cybersécurité. 
-                Les étudiants y apprennent les bases solides de la programmation, 
-                des algorithmes et des systèmes, avant de se spécialiser dans des domaines avancés comme le cloud, 
-                le machine learning ou la sécurité informatique. 
-                L'enseignement est fortement orienté vers la pratique, avec des projets concrets, 
-                du travail en équipe et l'utilisation d'outils professionnels, 
-                afin de préparer les étudiants aux besoins actuels du marché du travail.
-            </p>
-        </div>
+    <br>
+
+    <section>
+        <h1>Tableau des permanences</h1>
     </section>
 
     <br>

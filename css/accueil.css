@@ -185,6 +185,7 @@ section:hover #survol-section {
   text-align : center;
 }
 
+
       /* ---- Carrousel d'événements ---- */
 
 #carrousel {
@@ -196,9 +197,13 @@ section:hover #survol-section {
 
 .evenement { 
   display: none; 
-  padding: 2rem; 
-  border: 1px solid #7a7a7a; 
-  border-radius: 12px; 
+  border: 1px solid black;
+  border-radius: 12px;
+  width : 97%;
+  position: relative;
+  left : 0.75%;
+  padding : 0.5%;
+  background-color: #99999918;
 }
 
 .evenement.active { 
