@@ -3,8 +3,9 @@
     <head>
         <title>Projet WEB - Projets</title>
         <link rel= "stylesheet" href="../css/Style.css">
-        <link rel= "stylesheet" href="../css/cours.css">
+        <link rel= "stylesheet" href="../css/projets.css">
         <script type="text/javascript" src="../js/Java.js"></script>
+        <script type="text/javascript" src="../js/chatbot.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
     </head>
@@ -31,127 +32,14 @@
         </nav>
     </header>
 
-    <br>
-
-    <section class="carte" id="recherche">
-        <div class="en-tete" onclick="basculer('recherche')">
-            <h1>Projets de recherche (Efrei Research Lab)</h1>
-        </div>
-        <br>
-        <p>
-            L'Efrei Research Lab regroupe 55 enseignants-chercheurs et 65 doctorants. 
-            Ses travaux s'organisent autour de 4 axes thématiques et alimentent directement 
-            les enseignements dispensés en cycle ingénieur.
-        </p>
-
-        <div class="a-afficher">
-            <br><br>
-            <hr class="ligne">
-            <br><br>
-
-            <div>
-                <h2>Réseaux de communication</h2>
-                <ul>
-                    <li>Impact des technologies 5G sur la mobilité connectée</li>
-                    <li>Communication entre véhicules connectés</li>
-                    <li>Plateforme de collaboration via Blockchain et Smart Contracts</li>
-                </ul>
-            </div>
-            <br>
-            <div>
-                <h2>Sécurité, résilience et confiance numérique</h2>
-                <ul>
-                    <li>Mécanismes de sécurisation des systèmes distribués</li>
-                    <li>Cybersécurité des infrastructures critiques</li>
-                    <li>Éthique et philosophie du numérique</li>
-                </ul>
-            </div>
-            <br>
-            <div>
-                <h2>Systèmes embarqués intelligents</h2>
-                <ul>
-                    <li>BIO-Serr : gestion intelligente des serres agricoles via IoT et IA</li>
-                    <li>Sciences2024 : optimisation des performances sportives (JO Paris)</li>
-                    <li>Systèmes autonomes et robotique cognitive</li>
-                </ul>
-            </div>
-            <br>
-            <div>
-                <h2>Data, IA & sciences du vivant</h2>
-                <ul>
-                    <li>Identification de biomarqueurs par IA à partir de données omiques</li>
-                    <li>Big Data et Web Intelligence</li>
-                    <li>Analyse multicanale des réseaux sociaux (texte, image, vidéo)</li>
-                    <li>Débats en ligne et formation des opinions numériques</li>
-                </ul>
-            </div>
+    <section>
+        <h1>Chatbot sur les projets</h1>
+        <div id="chat-box"></div>
+        <div id="bouttons-chat">
+            <input type="text" id="user-input" placeholder="Posez votre question...">
+            <button onclick="fetchJSON('../json/intents.json')">Envoyer</button>
         </div>
     </section>
-
-    <br>
-
-    <section class="carte" id="projets">
-        <div class="en-tete" onclick="basculer('projets')">
-            <h1>Projets Etudiants (demandés en cours)</h1>
-        </div>
-        <br>
-        <p>
-            Pour améliorer les compétances des étudiants, l'EFREI poropose de nombreux projets.
-            Ceux-ci sont à réaliser chaque année dans le cadre de différents cours en PGE.
-        </p>
-
-        <div class="a-afficher">
-            <br><br>
-            <hr class="ligne">
-            <br><br>
-
-            <div>
-                <h2>Première année (P1)</h2>
-                <ul>
-                    <li>Créer un jeu vidéo - Projet Transverse</li>
-                    <li>Application de filtres - Introduction au C++</li>
-                    <li>Simulation de Fort Boyard - Python</li>
-                </ul>
-            </div>
-            <br>
-            <div>
-                <h2>Deuxième année (P2)</h2>
-                <ul>
-                    <li>Création d'une application - Delivery project</li>
-                    <li>Opérations sur des automates - Python</li>
-                    <li>Site du département informatique - WEB</li>
-                </ul>
-            </div>
-            <br>
-            <div>
-                <h2>Troisième année (ingé1)</h2>
-                <ul>
-                    <li>.</li>
-                    <li>.</li>
-                    <li>.</li>
-                </ul>
-            </div>
-            <br>
-            <div>
-                <h2>Quatrième année (ingé2)</h2>
-                <ul>
-                    <li>.</li>
-                    <li>.</li>
-                    <li>.</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Cinquième année (ingé3)</h2>
-                <ul>
-                    <li>.</li>
-                    <li>.</li>
-                    <li>.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <br>
 
     <footer>
         <br>

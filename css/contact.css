@@ -24,7 +24,7 @@
 form {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 100%;
 }
 
 .ligne-form {
@@ -36,11 +36,8 @@ input, textarea {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 100%;
-}
-
-textarea {
-    resize: none;
+    width: 95%;
+    margin : 5px;
 }
 
 button[type="submit"] {

@@ -74,7 +74,7 @@ h3 {
   font-weight: bold;
 }
 
-p, ul {
+p, ul, div {
   font-family: var(--typo-texte);
   font-size : var(--p-taille);
   line-height: var(--p-interligne);

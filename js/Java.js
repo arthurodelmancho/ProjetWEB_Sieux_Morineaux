@@ -77,6 +77,6 @@ function allerA(position) {
 }
 
 allerA(0);
-setInterval(() => allerA(index + getNbVisibles()), 5000);
+setInterval(() => allerA(index + getNbVisibles()), 3000);
 
 window.addEventListener('resize', () => allerA(index));

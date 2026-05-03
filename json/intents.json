@@ -1,0 +1,59 @@
+{
+    "intents": [
+      {
+        "tag": "greet",
+        "patterns": ["Bonjour", "Salut", "Coucou"],
+        "responses": ["Bonjour ! Comment puis-je vous aider ?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Au revoir", "À bientôt", "À la prochaine"],
+        "responses": ["À bientôt ! N'hésitez pas si vous avez d'autres questions."]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Merci", "Merci beaucoup", "Merci pour votre aide"],
+        "responses": ["De rien ! C'est un plaisir de vous aider."]
+      },
+      {
+        "tag": "nbr-personnes",
+        "patterns": ["Combien de personnes", "Nombre de chercheurs", "Nombre de doctorants", "enseignants-chercheurs"],
+        "responses": ["L'Efrei Research Lab regroupe 55 enseignants-chercheurs et 65 doctorants."]
+      },
+      {
+        "tag": "research-lab",
+        "patterns": ["Research Lab", "laboratoire de recherche", "axes thématiques", "travaux de recherche"],
+        "responses": ["L'Efrei Research Lab organise ses travaux autour de 4 axes thématiques : Réseaux de communication, Sécurité et confiance numérique, Systèmes embarqués intelligents, et Data/IA & sciences du vivant. Ces recherches alimentent directement les enseignements du cycle ingénieur."]
+      },
+      {
+        "tag": "reseaux",
+        "patterns": ["réseaux de communication", "5G", "véhicules connectés", "blockchain", "smart contracts"],
+        "responses": ["L'axe Réseaux de communication traite de l'impact de la 5G sur la mobilité connectée, de la communication entre véhicules connectés, et des plateformes de collaboration via Blockchain et Smart Contracts."]
+      },
+      {
+        "tag": "securite",
+        "patterns": ["sécurité", "cybersécurité", "résilience", "confiance numérique", "systèmes distribués", "infrastructures critiques", "éthique numérique"],
+        "responses": ["L'axe Sécurité et confiance numérique couvre la sécurisation des systèmes distribués, la cybersécurité des infrastructures critiques, ainsi que l'éthique et la philosophie du numérique."]
+      },
+      {
+        "tag": "data-ia",
+        "patterns": ["data", "IA", "intelligence artificielle", "biomarqueurs", "big data", "réseaux sociaux", "omiques", "web intelligence"],
+        "responses": ["L'axe Data, IA & sciences du vivant porte sur l'identification de biomarqueurs par IA, le Big Data et Web Intelligence, l'analyse multicanale des réseaux sociaux (texte, image, vidéo), ainsi que l'étude des débats en ligne et de la formation des opinions numériques."]
+      },
+      {
+        "tag": "projets",
+        "patterns": ["projets", "projet étudiant", "travaux pratiques", "PGE"],
+        "responses": ["L'EFREI propose de nombreux projets en PGE pour renforcer les compétences des étudiants. En P1 : jeu vidéo, filtres en C++, simulation Fort Boyard en Python. En P2 : application Delivery project, automates en Python, site web du département informatique."]
+      },
+      {
+        "tag": "projets-p1",
+        "patterns": ["première année", "P1", "jeu vidéo", "Fort Boyard", "projet transverse"],
+        "responses": ["En première année (P1), les étudiants réalisent : un jeu vidéo (Projet Transverse), une application de filtres en C++, et une simulation de Fort Boyard en Python."]
+      },
+      {
+        "tag": "projets-p2",
+        "patterns": ["deuxième année", "P2", "delivery", "automates", "site web département"],
+        "responses": ["En deuxième année (P2), les étudiants réalisent : une application Delivery project, des opérations sur automates en Python, et un site web pour le département informatique."]
+      }
+    ]
+  }

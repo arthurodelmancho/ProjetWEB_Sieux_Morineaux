@@ -1,0 +1,58 @@
+            /* ---- Chatbox ---- */
+
+#chat-box {
+    margin : 30px;
+  height: 300px;
+  background: white;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  border-radius: 5px;
+  padding: 10px;
+  border: solid 1px black;
+}
+
+.message-user {
+    background : var(--color-jauneElectrique);
+    position : relative;
+    left : 45%;
+    width : 52%;
+    padding : 8px;
+    border : solid 1px black;
+    border-radius : 8px;
+    box-shadow: 8px 3px 5px rgb(120, 120, 120);
+}
+
+.message-bot {
+    box-shadow: 8px 3px 5px rgb(120, 120, 120);
+    padding : 8px;
+    border : solid 1px black;
+    border-radius : 8px;
+}
+
+.message-undefined {
+    background : #99999918;
+    padding : 8px;
+    border-bottom: solid 1px black;
+}
+
+#user-input {
+    height : 35px;
+    width : 20%;
+    border-radius: 5px;
+    border : solid 1px black;
+    margin-right: 40px;
+}
+
+#bouttons-chat {
+    position: relative;
+    left : 30%;
+    padding : 15px;
+}
+
+.history-separator {
+    margin: 16px 0;
+}
+
+section {
+    margin : 15px;
+}
